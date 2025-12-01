@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | drinkflyers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- TOP STRIP -->
+    <div class="top-strip">FREE SHIPPING ON ORDERS $35+</div>
+
+    <!-- NAVBAR -->
+    <header>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="logox">
+        <a href="./index.html"> <div class="logo">FLYERS</div></a>
+      <h1 class="cocktail">COCKTAIL COMPANY.</h1>  
+      </div>
+
+      <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-user"></i></a>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+
+    <!-- FULLSCREEN MENU -->
+    <div class="fullscreen-menu" id="menu">
+      <div class="close-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <ul>
+        <a href="./shopall.html"> <li>SHOP ALL</li></a>
+        <a href="./about.html"> <li>ABOUT</li></a>
+        <a href="./faq.html"> <li>FAQ</li></a>
+
+        <a href="./contact.html"> <li>CONTACT</li></a>
+        <a href="./wholesale.html"><li>WHOLESALE</li></a>
+      </ul>
+
+      <div class="auth">
+        <a href="./login.html"> <p>Log in</p></a>
+        <a href="./createAccount.html"> <p>Create account</p></a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="./pictures/banner.webp" alt="banner" />
+    </div>
+
+    <section class="products-section">
+      <h2 class="section-title">NOW SERVING:</h2>
+
+      <div class="products">
+        <div onclick="cart()" class="product-card">
+          <div class="sold-out">SOLD OUT</div>
+          <img
+            src="./pictures/cardimg.png"
+            data-hover="./pictures/cardimg p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS HOUSE COCKTAIL VARIETY PACK</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$115.00+</p>
+        </div>
+
+         <div onclick="cart()" class="product-card">
+          <div class="sold-out">SOLD OUT</div>
+          <img
+            src="./pictures/cardimg2 p1  .png"
+            data-hover="./pictures/cardimg2 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS OL' FASHIONED</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+
+         <div onclick="cart()" class="product-card">
+          <img
+            src="./pictures/cardimg3 p1.png"
+            data-hover="./pictures/cardimg3 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS ITALIAN SPRITZ</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+
+       <div onclick="cart()" class="product-card">
+          <img
+            src="./pictures/cardimg4 p1.png"
+            data-hover="./pictures/cardimg4 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS MARGARITA</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+      </div>
+
+      <div class="products">
+       <div onclick="cart()" class="product-card">
+          <div class="sold-out">SOLD OUT</div>
+          <img
+            src="./pictures/cardimg.png"
+            data-hover="./pictures/cardimg p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS HOUSE COCKTAIL VARIETY PACK</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$115.00+</p>
+        </div>
+
+        <div onclick="cart()" class="product-card">
+          <div class="sold-out">SOLD OUT</div>
+          <img
+            src="./pictures/cardimg2 p1  .png"
+            data-hover="./pictures/cardimg2 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS OL' FASHIONED</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+
+         <div onclick="cart()" class="product-card">
+          <img
+            src="./pictures/cardimg3 p1.png"
+            data-hover="./pictures/cardimg3 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS ITALIAN SPRITZ</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+
+       <div onclick="cart()" class="product-card">
+          <img
+            src="./pictures/cardimg4 p1.png"
+            data-hover="./pictures/cardimg4 p2.png"
+            alt=""
+          />
+          <h3>10MG CANNABIS MARGARITA</h3>
+          <div class="rating"><span>★★★★★</span> 719 Reviews</div>
+          <p class="price">$45.00+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✨ FIXED SECTION BELOW -->
+    <section class="cannabis-cocktails">
+      <div class="card">
+        <img
+          src="./pictures/header3 card1.png"
+          data-hover="./pictures/cardimg-hover.png"
+          alt=""
+        />
+        <p>
+          Wind down with high-end cannabis cocktails crafted to lift your mood
+          without overstaying its welcome.
+        </p>
+        <a href="#" class="btn">Take the Edge Off</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="./pictures/header3 card2.png"
+          data-hover="./pictures/cardimg-hover.png"
+          alt=""
+        />
+        <p>
+          Enjoy anxiety-free moments with a sense of ease infused into each sip
+          of a cannabis Flyers cocktail.
+        </p>
+        <a href="#" class="btn">Embrace the Moment</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="./pictures/header3 card3.png"
+          data-hover="./pictures/cardimg-hover.png"
+          alt=""
+        />
+        <p>
+          Elevate your drinking ritual with bartender flavors expertly crafted
+          with 5MG of cannabis.
+        </p>
+        <a href="#" class="btn">Savor Sophistication</a>
+      </div>
+    </section>
+
+    <div class="header2">
+      <img src="./pictures/header2.png" alt="header2" />
+    </div>
+
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="featured-heading">FEATURED IN</h2>
+        <div class="featured-logos">
+          <img src="./pictures/header3.png" />
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="slider-content">
+            <div class="testimonial-card active">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "Refreshing and the perfect go-to for after work or out on the
+                town."
+              </p>
+              <p class="author">Chelsea B.</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "I love the relaxed feeling and lack of a morning headache."
+              </p>
+              <p class="author">Gwen B.</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "The best cocktail I've ever had, hands down."
+              </p>
+              <p class="author">Alex T.</p>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="prev-arrow" aria-label="Previous Testimonial">
+              ←
+            </button>
+            <button class="next-arrow" aria-label="Next Testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relaxation-banner">
+      <div class="banner-image">
+        <img
+          src="./pictures/canabiscocktail.png"
+          alt="Cannabis Cocktails on Ice"
+        />
+      </div>
+      <div class="banner-content">
+        <h2 class="banner-heading">
+          CANNABIS COCKTAILS CRAFTED FOR RELAXATION
+        </h2>
+        <a href="#" class="banner-button">UNWIND WITH EVERY SIP</a>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>HOW WILL FLYERS MAKE ME FEEL?</h3>
+            <span class="faq-toggle"></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Crafted with hemp-derived effect, we formulated our cocktails to
+              bring you a light sense of euphoria and relaxation. With our
+              nanotech, you should start to feel these effects within 15 minutes
+              and last for about 45 minutes. Please note, this can vary person
+              to person.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>HOW MANY COCKTAILS SHOULD I DRINK?</h3>
+            <span class="faq-toggle"></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We recommend starting with a half or full can to feel the effects
+              first before drinking another.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>WHAT ELSE IS IN FLYERS COCKTAILS?</h3>
+            <span class="faq-toggle"></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Besides our hemp-derived effect, our cocktails are crafted with
+              natural ingredients expertly measured by our Chief Flavor Officer
+              to deliver award winning taste & perfect feel. Scan our can's QR
+              code to see our testing results.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>I'M UNDER 21, CAN I DRINK FLYERS?</h3>
+            <span class="faq-toggle"></span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              While we appreciate the enthusiasm, the law is a little less
+              eager. Sit back and wait until your 21st birthday, and perhaps ask
+              your friends and family to hook you up on your special day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Links -->
+        <div class="footer-links">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Shipping & Returns</li>
+            <li>FDA Disclaimer</li>
+            <li>Terms & Conditions</li>
+            <li>COA</li>
+          </ul>
+
+          <ul>
+            <li>SHOP ALL</li>
+            <li>ABOUT</li>
+            <li>FAQ</li>
+            <li>REVIEWS</li>
+            <li>CONTACT</li>
+            <li>WHOLESALE</li>
+            <li>GIFT CARDS</li>
+          </ul>
+        </div>
+
+        <!-- Center Signup -->
+        <div class="footer-signup">
+          <img src="./pictures/footerlogo.png" class="footer-logo" alt="logo" />
+          <h3>SIGN UP & SAVE</h3>
+
+          <div class="email-box">
+            <input type="email" placeholder="email@example.com" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <!-- Right Socials -->
+        <div class="footer-social">
+          <p>STAY AWHILE @DRINKFLYERS</p>
+          <div class="social-icons">
+        <a href=" https://www.instagram.com/drinkflyers/">    <i class="fa-brands fa-instagram"></i></a>
+        <a href="  https://www.tiktok.com/@drinkflyers" >   <i class="fa-brands fa-tiktok"></i></a>
+       <a href=" https://www.youtube.com/@DrinkFlyers/xregexp">     <i class="fa-brands fa-youtube"></i></a>
+       <a href=" https://www.linkedin.com/company/flyers-cocktail-co/">   <i class="fa-brands fa-linkedin"></i></a>  
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <p>© 2025, Flyers Cocktail Company. Powered by Shopify</p>
+
+        <div class="payment-icons">
+          <img src="./visa.png" alt="" />
+          <img src="./mastercard.png" alt="" />
+          <img src="./applepay.png" alt="" />
+          <img src="./googlepay.png" alt="" />
+          <img src="./americanexpress.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

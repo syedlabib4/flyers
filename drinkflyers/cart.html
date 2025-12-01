@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cart | drinkflyers</title>
+
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="top-strip">
+    FREE SHIPPING ON ORDERS $35+
+</div>
+
+<!-- NAVBAR -->
+<header>
+    <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+<div class="logox">
+   <a href="./index.html">  <div class="logo">FLYERS</div></a>
+    <h1 class="cocktail">COCKTAIL COMPANY.</h1>  
+</div>
+
+    <div class="icons">
+        <a href="./login.html"><i class="fa-regular fa-user"></i></a> 
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+</header>
+
+<!-- FULLSCREEN MENU -->
+<div class="fullscreen-menu" id="menu">
+    <div class="close-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+     <ul>
+     <a href="./shopall.html">   <li>SHOP ALL</li></a>
+        <a href="./about.html"> <li>ABOUT</li></a>
+        <a href="./faq.html"> <li>FAQ</li></a>
+        
+        <a href="./contact.html"> <li>CONTACT</li></a>
+         <a href="./wholesale.html"><li>WHOLESALE</li></a>
+       
+    </ul>
+
+    <div class="auth">
+       <a href="./login.html"> <p>Log in</p></a>
+        <a href="./createAccount.html">  <p>Create account</p></a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="socials">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</div>
+
+<!-- MAIN CART SECTION -->
+<section class="cart-container">
+
+    <div class="cart-items">
+        <!-- Example Cart Items -->
+        <div class="cart-item">
+            <img src="./pictures/cardimg2 p1  .png" alt="Product 1">
+            <div class="item-details">
+                <h3>Product 1</h3>
+                <p class="price">$2.00</p>
+                <div class="quantity-box">
+                    <button onclick="decreaseQty(this)">-</button>
+                    <span>1</span>
+                    <button onclick="increaseQty(this)">+</button>
+                </div>
+                <span class="remove-btn" onclick="removeItem(this)">Remove</span>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="./pictures/cardimg2 p2.png" alt="Product 2">
+            <div class="item-details">
+                <h3>Product 2</h3>
+                <p class="price">$3.50</p>
+                <div class="quantity-box">
+                    <button onclick="decreaseQty(this)">-</button>
+                    <span>1</span>
+                    <button onclick="increaseQty(this)">+</button>
+                </div>
+                <span class="remove-btn" onclick="removeItem(this)">Remove</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <h3>Order Summary</h3>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$5.50</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Shipping</span>
+            <span>Calculated at checkout</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span id="total">$5.50</span>
+        </div>
+
+        <button class="checkout-btn" onclick="payment()">Proceed to Checkout</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

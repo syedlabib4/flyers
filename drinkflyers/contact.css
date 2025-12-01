@@ -1,0 +1,138 @@
+/* Color Variables for easy adjustment */
+:root {
+    --bg-color: #000000;
+    --text-color: #FFFFFF;
+    --accent-color: #C09A5D; /* The gold/brown color */
+    --form-bg: #000000;
+    --button-bg: #C09A5D;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif; /* Basic sans-serif for body/labels */
+    margin: 0;
+    padding: 50px 0; /* Add padding top/bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* --- Container and Heading --- */
+
+.contact-container {
+    width: 90%;
+    max-width: 600px; /* Adjust max-width as needed */
+    padding: 40px;
+    border: 1px solid var(--accent-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Alegreya Sans SC', sans-serif; /* Blocky/Bold Font */
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* --- Form Layout --- */
+
+form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 20px; /* Space between Name and Email fields */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    flex: 1; /* Makes Name and Email take equal width */
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* --- Labels and Inputs --- */
+
+label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: var(--text-color); /* Ensure labels are white */
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--form-bg);
+    border: 1px solid var(--accent-color); /* Gold border */
+    color: var(--text-color); /* Input text is white */
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none; /* Remove default focus outline */
+    -webkit-appearance: none; /* For consistent styling */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent-color); /* Keep the gold border on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing, but not horizontal */
+    height: 150px; /* Specific height for the message box */
+}
+
+/* --- Send Button --- */
+
+.send-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--button-bg); /* Gold/Brown background */
+    color: var(--text-color); /* White text */
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #D4A86A; /* Slightly lighter shade on hover */
+}
+
+/* --- Address Footer --- */
+
+.address-footer {
+    color: var(--accent-color);
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 40px; /* Space between form and address */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    /* Use the same blocky font for the address for authenticity */
+    font-family: 'Alegreya Sans SC', sans-serif; 
+    font-weight: 700;
+}

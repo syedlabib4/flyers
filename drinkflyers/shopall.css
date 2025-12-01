@@ -1,0 +1,218 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+/* TOP STRIP */
+.top-strip{
+    background:#c79a41;
+    padding:8px;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+/* NAVBAR */
+header{
+    width:100%;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    position:fixed; /* FIXED NAV */
+    top:0;
+    left:0;
+    z-index:9999; /* NAV ALWAYS ON TOP */
+}
+
+body{
+    padding-top:80px; /* Prevent content hidden behind nav */
+}
+
+.menu-btn i, 
+.icons i{
+    font-size:22px;
+    cursor:pointer;
+    color:white;
+}
+
+.logo{
+    font-size:40px;
+    letter-spacing:4px;
+    font-weight:900;
+}
+
+.logox a{
+    color:white;
+    text-decoration:none;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+}
+
+/* FULLSCREEN MENU */
+.fullscreen-menu{
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    height:100vh;
+    background:black;
+    color:white;
+    padding:40px;
+    transform:translateX(-100%);
+    transition:0.4s ease;
+    z-index:99999; /* MENU ABOVE EVERYTHING */
+}
+
+.fullscreen-menu.active{
+    transform:translateX(0);
+}
+
+.close-btn i{
+    font-size:30px;
+    cursor:pointer;
+    margin-bottom:40px;
+}
+
+.fullscreen-menu ul{
+    list-style:none;
+}
+
+.fullscreen-menu ul li{
+    font-size:28px;
+    letter-spacing:3px;
+    margin:22px 0;
+}
+
+.fullscreen-menu a{
+    text-decoration:none;
+    color:white;
+}
+
+.auth p{
+    font-size:18px;
+    margin-top:18px;
+}
+
+.auth a{
+    text-decoration:none;
+    color:white;
+}
+
+.search-box{
+    margin-top:35px;
+    display:flex;
+    align-items:center;
+    border:1px solid #aaa;
+    padding:12px;
+    border-radius:6px;
+}
+
+.search-box input{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    color:white;
+    font-size:18px;
+}
+
+.search-box i{
+    font-size:22px;
+}
+
+/* PRODUCT GRID */
+.products-sectionx{
+    background:black;
+    padding:60px 25px;
+}
+
+.section-titlex{
+    color:white;
+    font-size:32px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.productsx{
+    display:grid;
+    gap:40px;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    max-width:1200px;
+    margin:auto;
+}
+
+.product-cardx{
+    border:2px solid #c7a440;
+    background:#000;
+    padding:18px;
+    border-radius:10px;
+    text-align:center;
+    position:relative;
+    transition:.3s;
+}
+
+.product-cardx:hover{
+    transform:translateY(-6px);
+}
+
+.product-cardx img{
+    width:100%;
+    border-radius:10px;
+}
+
+.sold-outx{
+    position:absolute;
+    top:10px; left:-20px;
+    background:white;
+    color:black;
+    padding:6px 18px;
+    transform:rotate(-25deg);
+    font-size:14px;
+    font-weight:600;
+}
+
+.product-cardx h3{
+    color:white;
+    font-size:17px;
+    margin-top:15px;
+}
+
+.rating{
+    color:white;
+    font-size:15px;
+    margin:8px 0;
+}
+
+.rating span{
+    color:gold;
+}
+
+.price{
+    color:white;
+    font-size:20px;
+    font-weight:700;
+}
+
+/* FULL WIDTH IMAGES */
+.full-width-imagex{
+    width:100%;
+    margin:50px 0;
+}
+
+.full-width-imagex img{
+    width:100%;
+    display:block;
+}
+
+

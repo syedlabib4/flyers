@@ -1,0 +1,218 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --border-color: #4a402d; /* Dark gold/brown from the image */
+    --hover-color: #997e3a; /* Lighter gold for hover effect */
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Note: General * and body reset are handled in style.css now */
+body{
+    background-color: black;
+}
+.faq-container {
+    width: 100%;
+    max-width: 1200px;
+    /* This centering should now be done via margin: 0 auto in faq-container */
+}
+
+/* --- Headers (FAQ Title and Sections) --- */
+
+.faq-container header { /* Target the header inside the FAQ container */
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: none; /* Override possible border from the global header */
+    padding: 0;
+}
+
+
+.faq-container{
+   margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-container header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-container header p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+    text-transform: uppercase;
+}
+
+.section-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* --- Accordion Grid Layout --- */
+
+.accordion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the grid items */
+}
+
+.accordion-item {
+    min-height: 50px; /* Ensure a minimum height for all items */
+}
+
+.empty-placeholder {
+    display: none;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .accordion-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/* --- Accordion Item Styling (The Question Box) --- */
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.accordion-header:hover {
+    border-color: var(--hover-color);
+}
+
+.accordion-header i {
+    transition: transform 0.3s ease;
+    font-size: 0.75rem;
+}
+
+/* Rotate the icon when the header is active */
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+/* --- Accordion Content Styling (The Answer) --- */
+
+.accordion-content {
+    background-color: var(--bg-color);
+    border-left: 1px solid var(--hover-color);
+    border-right: 1px solid var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.accordion-content.show {
+    /* max-height is set dynamically by JS, but this class ensures padding is added */
+    padding: 20px;
+}
+
+.accordion-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+
+
+
+
+/* 🌍 Responsive Media Queries */
+
+/* Tablets + Medium Screens */
+@media (max-width: 992px) {
+
+    .faq-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .accordion-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .faq-container header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 120px; /* extra room for fixed nav */
+    }
+
+    .faq-container {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .faq-container header h1 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .accordion-header {
+        font-size: 0.85rem;
+        padding: 12px 15px;
+    }
+
+    .accordion-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Mobile (iPhone SE size) */
+@media (max-width: 480px) {
+
+    .faq-container header h1 {
+        font-size: 1.7rem;
+    }
+
+    .accordion-header {
+        font-size: 0.8rem;
+        padding: 10px 12px;
+    }
+
+    .accordion-content {
+        padding: 10px 15px !important;
+    }
+}
+
+/* Tiny Screens (<=380px) */
+@media (max-width: 380px) {
+
+    .accordion-header {
+        font-size: 0.75rem;
+        letter-spacing: 0.3px;
+    }
+
+    .faq-container header h1 {
+        font-size: 1.4rem;
+    }
+
+    .faq-container {
+        max-width: 100%;
+    }
+}

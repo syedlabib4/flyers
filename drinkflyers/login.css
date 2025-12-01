@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+
+
+
+
+/* Login Page Section */
+.login-page {
+    background-color: black;
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content near the top */
+    min-height: calc(100vh - 100px); /* Fill most of the screen height below the header */
+}
+
+.login-container {
+    max-width: 450px;
+    width: 100%;
+    /* Gold border similar to your testimonial cards */
+    border: 1px solid #775a2f; 
+    padding: 40px;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center the links at the bottom */
+}
+
+/* Header (LOGIN and Create Account) */
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.create-account-link {
+    color: #c99c38; /* Gold color */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.create-account-link:hover {
+    color: white;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    text-align: left;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: -10px; /* Pull label closer to input */
+    color: #ccc;
+}
+
+.login-form input {
+    background: none;
+    border: 1px solid white;
+    padding: 15px 12px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #c99c38; /* Highlight on focus */
+}
+
+/* Sign In Button */
+.sign-in-button {
+    background-color: #c79a41; /* Gold button color */
+    color: black;
+    border: none;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+    background-color: #b48832;
+}
+
+/* Links below the form */
+.login-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.login-links a:hover {
+    opacity: 1;
+    color: #c99c38;
+}

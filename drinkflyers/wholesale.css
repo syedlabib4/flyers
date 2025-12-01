@@ -1,0 +1,73 @@
+/* --- Container and Box Styling --- */
+
+
+body{
+    background-color: #000;
+}
+.wholesale-container {
+    /* Recreate the dark brown/black background with the golden border */
+    background-color: #000; 
+    border: 3px solid #b8860b; /* Goldenrod color for the border */
+    padding: 20px;
+    max-width: 800px; /* Limit width for readability */
+    width: 90%;
+    box-sizing: border-box;
+    /* Basic centering for the block on a page */
+    margin: 50px auto; 
+}
+
+.content-box {
+    /* Inner padding to give space between border and content */
+    padding: 30px 40px; 
+}
+
+/* --- Typography and Headings --- */
+
+.main-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em; 
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 2px; 
+}
+
+.sub-heading {
+    color: #ffd700; /* Gold/Yellow color for this text */
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.wholesale-container p { /* Specificity for paragraphs within the container */
+    line-height: 1.6;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure text is white */
+}
+
+/* Emphasize 'Airgoods' and other bold text */
+.wholesale-container p strong {
+    font-weight: 700;
+}
+
+/* --- Link Styling --- */
+
+.wholesale-link {
+    display: inline-block;
+    color: #b8860b; /* Goldenrod/brownish color for the link */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #b8860b; 
+    padding-bottom: 2px;
+}
+
+.wholesale-link:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+}

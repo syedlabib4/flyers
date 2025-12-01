@@ -1,0 +1,402 @@
+  /* About Description Section */
+        
+  
+  body{
+    background-color: #000;
+  }
+  
+  
+  .about-desc {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 60px 20px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #864f06;
+            margin: 30px 10px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        .about-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 300px;
+        }
+
+        .about-img img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        /* Header Images */
+        .header2, .header3, .header4, .header5 {
+            width: 100%;
+           
+        }
+
+        .header2 img, .header3 img, .header4 img, .header5 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* About Description 2 */
+        .aboutdesc2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 60px 20px;
+            background: #000;
+        }
+
+        .aboutdesc2 .box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 30px 40px;
+            border: 1px solid #d1a85a;
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .aboutdesc2 .box h3 {
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .aboutdesc2 .box p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* About Description 3 */
+        .aboutdesc3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            border: 1px solid #ca9635;
+            background: #000;
+            color: #fff;
+            margin: 30px 10px;
+        }
+
+        .aboutdesc3-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 300px;
+        }
+
+        .aboutdesc3-img img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        .aboutdesc3-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .aboutdesc3-text h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .aboutdesc3-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        /* Cards Section */
+        .aboutpagecards-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 30px 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .aboutpagecards-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .aboutpagecards-container::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        .aboutpagecards-container::-webkit-scrollbar-thumb {
+            background: #d1a85a;
+            border-radius: 3px;
+        }
+
+        .aboutpagecards {
+            background: #000;
+            border: 1px solid #b8b820;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            color: white;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .aboutpagecards .card-img {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+        }
+
+        .aboutpagecards .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stars {
+            margin: 10px 0;
+            letter-spacing: 3px;
+            font-size: 14px;
+            color: #d1a85a;
+        }
+
+        .review-text {
+            font-size: 12px;
+            color: #ccc;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .review-name {
+            font-size: 13px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 20px 20px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links li:hover {
+            color: #d1a85a;
+        }
+
+        .footer-signup {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+
+        .footer-signup h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .email-box {
+            display: flex;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .email-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #333;
+            background: #111;
+            color: #fff;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .email-box button {
+            padding: 10px 15px;
+            background: #d1a85a;
+            color: #000;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .footer-social {
+            text-align: right;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-social p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
+
+        .social-icons i {
+            font-size: 20px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #d1a85a;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .payment-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .payment-icons img {
+            height: 20px;
+            filter: brightness(0.8);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .about-desc, .aboutdesc3 {
+                margin: 20px 10px;
+                padding: 40px 20px;
+            }
+            
+            .aboutdesc2 {
+                padding: 40px 20px;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+            
+            .footer-social {
+                text-align: center;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-desc, .aboutdesc2, .aboutdesc3 {
+                padding: 30px 15px;
+            }
+            
+            .aboutdesc2 .box {
+                padding: 20px;
+            }
+            
+            .aboutpagecards-container {
+                padding: 20px 15px;
+            }
+            
+            .footer {
+                padding: 30px 15px 15px;
+            }
+        }
